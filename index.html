@@ -5,34 +5,61 @@
     <title>Lenni</title>
     <link rel="stylesheet" href="styles/styles.css">
   </head>
-  <body>
-    <header>
-      <a href="a"></a>
-      <nav>
-        <a href="a">Мероприятия</a>
-        <a href="a">Блог</a>
-        <a href="a">О нас</a>
-        <a href="a">Контакты</a>
+
+  <body class="body">
+    <header class="page-header">
+      <a class="page-header__logo" href="a">Logo</a>
+      <nav class="page-header__nav">
+        <a class="page-header__nav-link" href="a">Мероприятия</a>
+        <a class="page-header__nav-link" href="a">Блог</a>
+        <a class="page-header__nav-link" href="a">О нас</a>
+        <a class="page-header__nav-link" href="a">Контакты</a>
       </nav>
+      <a class="page-header__user-link" href="#">Войти</a>
     </header>
-    <main>
-      <header>
-        <h1>АРТ-ПРОСТРАНСТВО</h1>
-      </header>
-      <section>
-        <h2>О НАС</h2>
-      </section>
-      <section>
-        <h2>МЕРОПРИЯТИЯ</h2>
-      </section>
-      <section>
-        <h2>БЛОГ</h2>
-      </section>
-      <section>
-        <h2>КОНТАКТЫ</h2>
-      </section>
+
+    <main class="main">
+      <div class="home">
+        <header class="main-header home__main-header">
+          <h1>АРТ-ПРОСТРАНСТВО</h1>
+          <img />
+          <p>для людей, горящих сердцем и делом
+            место для настоящего
+          </p>
+        </header>
+        
+        <section class="offers home__offers">
+          <h4 class="offers__title">я хочу:</h4>
+          <div class="offers__btns">
+            <button class="offers__btn btn btn--red" type="button">Провести мероприятие</button>
+            <button class="offers__btn btn" type="button">Стать арендатором</button>
+          </div>
+        </section>
+        
+        <section class="about home__about">
+          <h2 class="about__section-title section-title">О НАС</h2>
+          <div class="about__container"></div>
+        </section>
+
+        <section class="upcomming home__upcomming">
+          <h2 class="upcomming__section-title section-title">МЕРОПРИЯТИЯ</h2>
+          <div class="upcomming__container"></div>
+        </section>
+
+        <section class="listing home__listing">
+          <h2 class="listing__section-title section-title">БЛОГ</h2>
+          <div class="listing__container"></div>
+        </section>
+
+        <section class="contacts home__contacts">
+          <h2 class="contacts__section-title section-title">КОНТАКТЫ</h2>
+          <div class="contacts__container"></div>
+        </section>
+
+        <div class="doit"></div>
+      </div>
     </main>
 
-    <footer></footer>
+    <footer class="page-footer"></footer>
   </body>
 </html>
