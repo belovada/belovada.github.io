@@ -25,7 +25,7 @@
           <h2 class="about__section-title section-title">О НАС</h2>
           <div class="about__container"></div>
         </section>
-        
+
         <section class="upcomming home__upcomming">
           <h2 class="upcomming__section-title section-title">МЕРОПРИЯТИЯ</h2>
           <div class="upcomming__container"></div>
@@ -43,11 +43,12 @@
 
         <div class="doit"></div>
       
-        <!-- prettier ignore-->
-        @@include('blocks/blog-listing', {"class": "home__listing"})
+        <!-- prettier ignore -->
+        @@include('blocks/blog-listing.html', {"class": "home__listing"})
       </div>
     </main>
-
+    
     @@include('blocks/page-footer.html')
+    @@include('blocks/event-pp.html')
   </body>
 </html>
