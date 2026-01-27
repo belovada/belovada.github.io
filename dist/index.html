@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+<!--<html lang="ru" class="show-event-popup">-->
 
 <head>
   <meta charset="UTF-8" />
@@ -19,7 +20,7 @@
         </svg>
       </a>
       <nav class="page-header__nav">
-        <a class="page-header__nav-link" href="a">Мероприятия</a>
+        <a class="page-header__nav-link" href="/dist/events.html">Мероприятия</a>
         <a class="page-header__nav-link" href="a">Блог</a>
         <a class="page-header__nav-link" href="a">О нас</a>
         <a class="page-header__nav-link" href="a">Контакты</a>
@@ -57,9 +58,46 @@
         <div class="upcomming__container"></div>
       </section>
 
-      <section class="listing home__listing">
-        <h2 class="listing__section-title section-title">БЛОГ</h2>
-        <div class="listing__container"></div>
+      <section class="listing @@class">
+        <h2 class="listing__title section-title">Блог</h2>
+
+        <div class="listing__article-list">
+          <!-- prettier-ignore -->
+          @@loop('article-card.html', [
+          {
+          "class": "listing__article-card",
+          "img": "assets/images/blog/theatre.jpg",
+          "alt": "Theatre Photosession",
+          "title": "Фотосессия в стенах Театра драмы",
+          "descr": "Организовывая фотосессию для локального бренда одежды мы смогли
+          воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было ",
+          "time": "26.11.2024",
+          "datetime": "2024-11-26T00:00"
+          },
+          {
+          "class": "listing__article-card",
+          "img": "assets/images/blog/vr.jpg",
+          "alt": "VR Expo Tomsk",
+          "title": "Выставка VR в Томске",
+          "descr": "Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ...
+          Мы предоставляем нашим клиентам лучший игровой VR-опыт в Томске.",
+          "time": "05.11.2024",
+          "datetime": "2024-11-05T00:00"
+          },
+          {
+          "class": "listing__article-card",
+          "img": "assets/images/blog/radio.jpg",
+          "alt": "Rocking radio",
+          "title": "Rocking radio в заброшенном ангаре",
+          "descr": "15 электрогенераторов, километры проводов и пару тонн света.
+          Все это для того, чтобы организовать лучшую вечеринку года для ребят из Новосибирска.",
+          "time": "01.11.2024",
+          "datetime": "2024-11-01T00:00"
+          }
+          ])
+        </div>
+
+        <a href="#" class="listing__link link">Смотреть все</a>
       </section>
 
       <section class="contacts home__contacts">
@@ -68,10 +106,64 @@
       </section>
 
       <div class="doit"></div>
+
+      <!-- prettier ignore -->
+      <section class="listing home__listing">
+        <h2 class="section-title listing__title">Блог</h2>
+        <div class="listing__article-list">
+          <!-- prettier ignore -->
+          <article class="article-card ">
+            <a href="#" class="article-card__link">
+              <picture class="article-card__picture">
+                <img src="" alt="@alt" class="article-card__img" />
+              </picture>
+            </a>
+            <div class="article-card__info">
+              <time datetime="" class="article-card__time">
+
+              </time>
+              <a href="#" class="article-card title-link">
+                <h4 class="article-card__title">
+
+                </h4>
+                <span class="article-card__arrow">
+                  <svg class="arrow__icon" width="91" height="60">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </span>
+              </a>
+              <p class="article-card__description">
+
+              </p>
+            </div>
+          </article>
+        </div>
+        <a href="#" class="listing__link link">Смотреть все</a>
+      </section>
     </div>
   </main>
 
   <footer class="page-footer">footer</footer>
+  <div class="pp" id="eventPP">
+    <div class="pp__wrapper">
+      <div class="pp__sticky-close">
+        <button type="button" class="pp__x-btn x-btn">
+          <svg class="x-btn__icon" width="12" height="12">
+            <use xlink:href="assets/icons/symbols.svg#x"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="pp__container">
+        <h2 class="pp__title">Заполните форму
+          <br />
+          и мы подберем площадку
+        </h2>
+        <form class="pp__form form">
+
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
