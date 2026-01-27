@@ -9,13 +9,17 @@
   z-index: 100;
   &__container{
         .container();
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
     }
 
 &__logo{
   flex-shrink: 0;
   font-size: 0;
   width: 202px;
-  height: 147px;
+  height: auto;
 }
 
 &__logo-icon{
@@ -25,8 +29,7 @@
 
 &__nav{
   display: flex;
-  align-items: baseline;
-  margin: 0 auto;
+  align-items: center;
   gap: 50px;
 }
 
