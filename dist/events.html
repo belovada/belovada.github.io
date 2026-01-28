@@ -116,7 +116,51 @@
         <h2 class="pp__title">Заполните форму
           <br />и мы подберем площадку
         </h2>
-        <form class="pp__form form"></form>
+        <form class="pp__form form">
+
+          <label class="field">
+            <span class="field__title">
+              Планируемое количество посетителей:
+            </span>
+            <select name="amount" class="field_select">
+              <option value="20">до 20 человек</option>
+              <option value="100">от 20 до 100 человек</option>
+              <option value="500">от 100 до 500 человек</option>
+              <option value="1000">более 500 человек</option>
+            </select>
+          </label>
+
+          <h5 class="form_title">
+            Контактные данные:
+          </h5>
+          <div class="form_list">
+            <label class="field form__field">
+              <span class="field__label">Имя</span>
+              <input type="text" class="field__input" name="name" placeholder="Имя">
+            </label>
+            <label class="field form__field">
+              <span class="field__label">Фамилия</span>
+              <input type="text" class="field__input" name="surname" placeholder="Фамилия">
+            </label>
+            <label class="field form__field">
+              <span class="field__label">Телефон</span>
+              <input type="tel" class="field__input" name="phone" placeholder="Телефон">
+            </label>
+            <label class="field form__field">
+              <span class="field__label">Email</span>
+              <input type="email" class="field__input" name="email" placeholder="Email">
+            </label>
+          </div>
+
+
+          <label class="field form__field">
+            <span class="field__title">
+              Есть пожелания? Напишите нам:
+            </span>
+            <textarea name="Пожелания" id="field__textarea"></textarea>
+          </label>
+
+        </form>
       </div>
     </div>
   </div>
