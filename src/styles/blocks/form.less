@@ -2,9 +2,10 @@
     &__list{
         display: flex;
         flex-wrap: wrap;
-        gap: 30px 60px;
+        gap: 0px 60px;
     }
-    &__field{
+    &__field,
+    &__group {
         width:100%;
         margin: 0 0 30px;
         &--w50{
@@ -14,10 +15,38 @@
             margin: 0;
         }
     }
+    &__check{
+        margin: 0 0 30px;
+    }
     &__title{
         display: block;
-        margin-bottom: 10px;
+        margin: 0 0 10px;
         font-weight: 700;
         font-size: 18px;
+    }
+    &__btns{
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+    &__submit{
+        width: calc(50%-30px);
+    }
+    &__close-btn{
+        margin: 0 auto;
+        padding: 5px;
+        border: none;
+        background-color: transparent;
+        text-decoration: underline;
+        color: @black;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.375;
+        transition: color 0.2s;
+        &:hover,
+        &:active{
+            color: @red;
+        }
     }
 }

@@ -109,6 +109,9 @@ textarea:focus::placeholder {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 15px 40px;
@@ -120,7 +123,7 @@ textarea:focus::placeholder {
   font-family: "Open Sans", sans-serif;
   font-size: 600;
   font-size: 16px;
-  line-height: 1.375;
+  line-height: 20px;
   text-align: center;
   overflow: hidden;
   cursor: pointer;
@@ -422,23 +425,59 @@ textarea:focus::placeholder {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 30px 60px;
+  gap: 0px 60px;
 }
-.form__field {
+.form__field,
+.form__group {
   width: 100%;
   margin: 0 0 30px;
 }
-.form__field--w50 {
+.form__field--w50,
+.form__group--w50 {
   width: calc(50%-30px);
 }
-.form__field--m0 {
+.form__field--m0,
+.form__group--m0 {
   margin: 0;
+}
+.form__check {
+  margin: 0 0 30px;
 }
 .form__title {
   display: block;
-  margin-bottom: 10px;
+  margin: 0 0 10px;
   font-weight: 700;
   font-size: 18px;
+}
+.form__btns {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 60px;
+}
+.form__submit {
+  width: calc(50%-30px);
+}
+.form__close-btn {
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+  text-decoration: underline;
+  color: #1f1e1e;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.form__close-btn:hover,
+.form__close-btn:active {
+  color: #bc3324;
 }
 .radio {
   display: -webkit-box;
