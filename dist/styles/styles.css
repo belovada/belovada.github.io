@@ -479,6 +479,81 @@ textarea:focus::placeholder {
 .form__close-btn:active {
   color: #bc3324;
 }
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #1f1e1e;
+  text-align: center;
+}
+.table__th {
+  height: 85px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.38;
+  border-right: 1px solid #bfbfbf;
+}
+.table__th:last-child {
+  border-right: none;
+}
+.table__tr:nth-child(2n-1) {
+  background-color: rgba(31, 30, 30, 0.03);
+}
+.table__body-th,
+.table__td {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+}
+.table__body-th {
+  padding: 13px 15px 12px 0;
+  border-top: 1px solid #bfbfbf;
+  border-bottom: 1px solid #bfbfbf;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.38;
+  text-align: left;
+}
+.table__td {
+  padding: 13px 10px 12px;
+  border: 1px solid #bfbfbf;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.375;
+}
+.table__td:last-child {
+  border-right: none;
+}
+.table__footer-th {
+  height: 60px;
+  font-size: 0;
+  border-right: 1px solid #bfbfbf;
+}
+.table__footer-th:last-child {
+  border-right: none;
+}
+.table__ok {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #1f1e1e;
+}
+.table__ok::after {
+  content: "";
+  position: absolute;
+  left: 9px;
+  top: 4px;
+  width: 6px;
+  height: 12px;
+  border-bottom: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
 .radio {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -997,10 +1072,27 @@ textarea:focus::placeholder {
   margin-bottom: 95px;
 }
 .events {
-  padding: 140px 0 150px;
+  padding: 140px 0 100px;
 }
 .events__listing {
   margin-bottom: 100px;
+}
+.events__services {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-bottom: 50px;
+}
+.events__section-description {
+  max-width: 870px;
+  margin: 0 0 60px;
+  font-size: 16px;
+  line-height: 22px;
 }
 .event {
   padding: 40px 0 150px;
