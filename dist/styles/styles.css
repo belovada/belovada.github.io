@@ -1061,6 +1061,7 @@ textarea:focus::placeholder {
   width: 24px;
   height: 24px;
   border: 1px solid #1f1e1e;
+  background-color: #1f1e1e;
 }
 .reserve__legend-box--red {
   color: #bc3324;
