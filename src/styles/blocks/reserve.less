@@ -75,12 +75,33 @@
         }
     }
 
+    &__legend{
+        max-width: 350px;
+        align-items: end;
+        text-align: right;
+    }
+
+    &__legend-list{
+        gap: 18px;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        align-items: end;
+    }
+
+    &__legend-list-item {
+    display: flex;
+    // justify-content: space-between;
+    // align-items: baseline;
+    gap: 9px;
+    }
+
     &__legend-box{
         box-sizing: border-box;
         display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: relative;
+        // top: 0;
+        // left: 0;
         width: 24px;
         height: 24px;
         border: 1px solid @black;
@@ -91,6 +112,7 @@
         background-color: @red;
         }
     }
+
 
 }
 
