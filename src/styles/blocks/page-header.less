@@ -7,8 +7,14 @@
   z-index: 100;
   background: transparent;
   overflow: hidden;
+
+  @media @bw1660{
+    height: 111px;
+  }
+
   &__container{
         .container();
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -24,41 +30,94 @@
       z-index: -1;
     }
 
-&__logo{
-  flex-shrink: 0;
-  font-size: 0;
-  width: 202px;
-  height: auto;
-}
+  &__logo{
+    font-size: 0;
+    width: 202px;
+    height: 147;
+    text-decoration: none;
+    @media @bw1660{
+      width: 152px;
+      height: 111px;
+    }
+  }
 
-&__logo-icon{
-  width: 100%;
-  height: 100%;
-}
+  &__logo-icon{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 
-&__nav{
-  display: flex;
-  align-items: center;
-  gap: 50px;
-}
+  &__nav{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    display: none;//доработать стили
+  }
 
-&__nav-link {
-  color: @black;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.38;
-  text-decoration: none;
-  transition: color 0.2s;
-}
+  &__nav-link {
+    color: @black;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.38;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
 
-&__nav-link:hover {
-  color: @red;
-}
+  &__nav-link:hover {
+    color: @red;
+  }
 
-&__right-block {
-  display: flex;
-  width: 202px;
-  justify-content: flex-end;
-  align-items: center;
-}
+  &__right-block {
+    display: flex;
+    width: 202px;
+    justify-content: flex-end;
+    align-items: center;
+    @media @bw1660{
+      width: 152px;
+    }
+    @media @bw1020{
+      width: auto;
+      margin-left: auto;
+    }
+  }
+
+  &__btn{
+    display: inline-flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 15px 40px;
+    border: 1px solid @black;
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+    color: @black;
+    font-family: @font1;
+    font-size: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+    @media @bw1020{
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      border: none;
+      font-size: 0;
+    }
+    &:hover,
+    &:active {
+          background-color: @black;
+          color: @white;
+    }
+  }
+
+  &__user-icon{
+    display: none;
+    @media @bw1020{
+        display: block;
+        margin: auto;
+    }
+  }
 }
