@@ -1002,33 +1002,13 @@ textarea:focus::placeholder {
   width: 100%;
 }
 .reserve__checks {
-  grid-area: "checks";
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  grid-area: checks;
 }
 .reserve__order {
   grid-area: order;
 }
 .reserve__scheme {
   grid-area: scheme;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
 }
 .reserve__legend {
   grid-area: legend;
