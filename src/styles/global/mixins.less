@@ -61,3 +61,43 @@
         display: flex;
     }
 }
+
+// .custom-scroll-x{
+
+//   &:: ::-webkit-scrollbar{
+//     width: 6px;
+//     height: 6px;
+//     border-radius: 1px;
+//     background-color: transparent;
+//   }
+
+//   &::-webkit-scrollbar-thumb{
+//     border-radius: 1px;
+//     background-color: #6C6C6C;
+//   }
+
+// }
+
+.show-nav{
+    body{
+      @media @bw1020{
+        overflow: hidden;
+      }
+    }
+
+    .page-header__nav{
+      @media @bw1020{
+        transform: translateX(0);
+      }
+    }
+
+    .page-header__nav-toggle{
+      &::before{
+        box-shadow: none;
+        transform:translate(0, 6px) rotate(45deg);
+      }
+      &::after{
+        transform:translate(0, -6px) rotate(-45deg);
+      }
+    }
+}
