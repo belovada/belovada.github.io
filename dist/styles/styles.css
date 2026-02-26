@@ -846,11 +846,13 @@ textarea:focus::placeholder {
 .article-card {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
-.article-card:hover .article-card__picture {
+.article-card:active .article-card__picture {
   -webkit-box-shadow: 0px 0px 30px 0px rgba(31, 31, 30, 0.55);
           box-shadow: 0px 0px 30px 0px rgba(31, 31, 30, 0.55);
 }
@@ -872,6 +874,11 @@ textarea:focus::placeholder {
   pointer-events: none;
 }
 .article-card__link {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: block;
   margin-right: 60px;
   width: 467px;
   text-decoration: none;
@@ -1003,6 +1010,16 @@ textarea:focus::placeholder {
 }
 .reserve__checks {
   grid-area: checks;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 .reserve__order {
   grid-area: order;
@@ -1675,6 +1692,9 @@ textarea:focus::placeholder {
   .event-card__title {
     margin: 0 0 10px;
   }
+  .article-card__link {
+    margin-right: 40px;
+  }
   .listing__events-list {
     gap: 90px 40px;
   }
@@ -1743,6 +1763,15 @@ textarea:focus::placeholder {
   }
   .width_624 {
     max-width: 566px;
+  }
+}
+@media (max-width: 1169px) {
+  .article-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 708px;
   }
 }
 @media (max-width: 1019px) {
@@ -1996,12 +2025,7 @@ textarea:focus::placeholder {
     gap: 13px;
   }
 }
-@media (max-width: 599px) {
-  .section-title {
-    font-size: 16px;
-  }
-}
-@media (min-width: 649px) {
+@media (max-width: 649px) {
   .listing__events-list {
     gap: 60px 0;
   }
@@ -2013,5 +2037,16 @@ textarea:focus::placeholder {
   .listing__event-card {
     max-width: 450px;
     width: 100%;
+  }
+}
+@media (max-width: 599px) {
+  .section-title {
+    font-size: 16px;
+  }
+}
+@media (hover: hover) {
+  .article-card:hover .article-card__picture {
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(31, 31, 30, 0.55);
+            box-shadow: 0px 0px 30px 0px rgba(31, 31, 30, 0.55);
   }
 }
