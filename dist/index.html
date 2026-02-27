@@ -279,8 +279,42 @@
 
       <!-- prettier ignore -->
       <section class="contacts home__contacts">
-        <h2 class="contacts__section-title section-title">КОНТАКТЫ</h2>
-        <div class="contacts__container"></div>
+        <h2 class="contacts__section-title section-title">Контакты</h2>
+
+        <div class="contacts__wrapper">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <div class="contacts__item-mark">
+                <svg class="contacts__item-icon" width="18" height="18">
+                  <use xlink:href="assets/icons/symbols.svg#dot"></use>
+                </svg>
+              </div>
+              <div class="contacts__item-content">
+                <h4 class="contacts__item-content">
+                  Томск, Белая 8
+                </h4>
+
+                <div class="contacts__item-info">
+                  2 этаж
+                </div>
+                <div class="contacts__item-info">
+                  оф. 207-208
+                </div>
+              </div>
+            </li>
+
+            <li class="contacts__item">
+              <div class="contacts__item-mark">
+
+              </div>
+              <div class="contacts__item-content">
+
+              </div>
+            </li>
+          </ul>
+
+          <div class="contacts__map" id="js-contactsMap"></div>
+        </div>
       </section>
 
 
@@ -517,6 +551,8 @@
     </div>
   </div>
 
+
+  <script src="https://maps.googleapis.com/maps/api/js?key="></script>
 
   <script src="scripts/swiper.min.js"></script>
 
