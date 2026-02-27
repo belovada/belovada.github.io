@@ -50,42 +50,145 @@
       <header class="main-header home__main-header">
         <h1>АРТ-ПРОСТРАНСТВО</h1>
         <img />
-        <p>для людей, горящих сердцем и делом
+        <p>для людей, горящих сердцем&nbsp;и&nbsp;делом
+          <br />
           место для настоящего
         </p>
       </header>
 
+      <!-- prettier ignore -->
       <section class="offers home__offers">
-        <h4 class="offers__title">я хочу:</h4>
+        <h4 class="offers__title">Я хочу:</h4>
         <div class="offers__btns">
-          <button class="offers__btn btn btn--red" type="button">Провести мероприятие</button>
+          <button class="offers__btn btn btn--red" type="button" id="js-eventOpenBtn">Провести мероприятие</button>
           <button class="offers__btn btn" type="button">Стать арендатором</button>
         </div>
       </section>
 
+
+      <!-- prettier ignore -->
       <section class="about home__about">
         <h2 class="about__section-title section-title">О НАС</h2>
         <div class="about__container"></div>
       </section>
 
-      <section class="upcomming home__upcomming">
-        <h2 class="upcomming__section-title section-title">МЕРОПРИЯТИЯ</h2>
-        <div class="upcomming__container"></div>
+
+      <!-- prettier ignore -->
+      <section class="upcoming home__upcomming">
+        <div class="upcoming__wrapper">
+          <div class="upcoming__container">
+            <h2 class="upcoming__title section-title">Мероприятия</h2>
+
+            <div class="upcoming__swiper swiper swiper--3s js-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <article class="event-card  ">
+                    <a href="#" class="event-card__link">
+                      <picture class="event-card__picture">
+                        <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/events/nirvana.webp" />
+                        <source media="(max-width: 450px)" srcset="assets/images/events/nirvana.jpg" />
+                        <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/events/nirvana_tablet.webp" />
+                        <source media="(max-width: 1169px)" srcset="assets/images/events/nirvana_tablet.jpg" />
+                        <source type="image/webp" srcset="assets/images/events/nirvana.webp" />
+                        <img src="assets/images/events/nirvana.jpg" alt="nirvana" class="event-card__img" />
+                      </picture>
+                      <h4 class="event-card__title">Собираемся и слушаем альбом Nirvana</h4>
+                      <p class="event-card__description">Это третий альбом группы, выпущенный после смерти Курта Кобейна и первый, содержащий студийный материал.</p>
+                      <time datetime="2024-12-07T18:00" class="event-card__time">07.12.2024 | начало 18.00</time>
+                    </a>
+                  </article>
+
+                </div>
+                <div class="swiper-slide">
+                  <article class="event-card  ">
+                    <a href="#" class="event-card__link">
+                      <picture class="event-card__picture">
+                        <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/events/stuff.webp" />
+                        <source media="(max-width: 450px)" srcset="assets/images/events/stuff.jpg" />
+                        <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/events/stuff_tablet.webp" />
+                        <source media="(max-width: 1169px)" srcset="assets/images/events/stuff_tablet.jpg" />
+                        <source type="image/webp" srcset="assets/images/events/stuff.webp" />
+                        <img src="assets/images/events/stuff.jpg" alt="stuff" class="event-card__img" />
+                      </picture>
+                      <h4 class="event-card__title">Есть тема, нужно обсудить с HowStuffWorks</h4>
+                      <p class="event-card__description">Один из самых популярных подкастов в мире. В нём авторы объясняют, как устроены разные вещи.</p>
+                      <time datetime="2024-12-14T18:30" class="event-card__time">14.12.2024 | начало 18.30</time>
+                    </a>
+                  </article>
+
+                </div>
+                <div class="swiper-slide">
+                  <article class="event-card  ">
+                    <a href="#" class="event-card__link">
+                      <picture class="event-card__picture">
+                        <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/events/sade.webp" />
+                        <source media="(max-width: 450px)" srcset="assets/images/events/sade.jpg" />
+                        <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/events/sade_tablet.webp" />
+                        <source media="(max-width: 1169px)" srcset="assets/images/events/sade_tablet.jpg" />
+                        <source type="image/webp" srcset="assets/images/events/sade.webp" />
+                        <img src="assets/images/events/sade.jpg" alt="Sade" class="event-card__img" />
+                      </picture>
+                      <h4 class="event-card__title">Вечер | The Best of Sade</h4>
+                      <p class="event-card__description">Музыка группы имеет эклектичный характер, сочетая в себе элементы музыки соул, джаза, ритм-блюза и фанка.</p>
+                      <time datetime="2024-12-16T20:00" class="event-card__time">16.12.2024 | начало 20.00</time>
+                    </a>
+                  </article>
+
+                </div>
+                <div class="swiper-slide">
+                  <article class="event-card  ">
+                    <a href="#" class="event-card__link">
+                      <picture class="event-card__picture">
+                        <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/events/malevich.webp" />
+                        <source media="(max-width: 450px)" srcset="assets/images/events/malevich.jpg" />
+                        <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/events/malevich_tablet.webp" />
+                        <source media="(max-width: 1169px)" srcset="assets/images/events/malevich_tablet.jpg" />
+                        <source type="image/webp" srcset="assets/images/events/malevich.webp" />
+                        <img src="assets/images/events/malevich.jpg" alt="malevich" class="event-card__img" />
+                      </picture>
+                      <h4 class="event-card__title">Выставка Малевича в Томске</h4>
+                      <p class="event-card__description">Это будет самая полная выставка с 1988 года, того времени, когда впервые заговорили о Малевиче. Экспозиция займёт два этажа павильона.</p>
+                      <time datetime="2024-12-23T20:00" class="event-card__time">23.12.2024 | начало 20.00</time>
+                    </a>
+                  </article>
+
+                </div>
+              </div>
+
+              <footer class="swiper-footer">
+                <button type="button" class="swiper-arrow-prev arrow arrow--left">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </button>
+
+                <div class="swiper-pagination"></div>
+                <button type="button" class="swiper-arrow-next arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
+                </button>
+              </footer>
+            </div>
+            <a href="#" class="upcoming__link link">Смотреть все</a>
+          </div>
+        </div>
       </section>
 
-      <section class="listing @@class">
-        <h2 class="listing__title section-title">Блог</h2>
 
+      <!-- prettier ignore -->
+      <section class="listing home__listing">
+        <h2 class="section-title listing__title">Блог</h2>
         <div class="listing__article-list">
-          <!-- prettier-ignore -->
+          <!-- prettier ignore -->
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/blog/theatre.jpg_webp" />
+                <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/blog/theatre.webp" />
                 <source media="(max-width: 450px)" srcset="assets/images/blog/theatre.jpg" />
-                <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/blog/theatre.jpg_tablet_webp" />
-                <source media="(max-width: 1169px)" srcset="assets/images/blog/theatre.jpg_tablet" />
-                <source type="image/webp" srcset="assets/images/blog/theatre.jpg_webp" />
+                <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/blog/theatre_tablet.webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/theatre_tablet.jpg" />
+                <source type="image/webp" srcset="assets/images/blog/theatre.webp" />
                 <img src="assets/images/blog/theatre.jpg" alt="@alt" class="article-card__img" />
               </picture>
             </a>
@@ -111,11 +214,11 @@
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/blog/vr.jpg_webp" />
+                <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/blog/vr.webp" />
                 <source media="(max-width: 450px)" srcset="assets/images/blog/vr.jpg" />
-                <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/blog/vr.jpg_tablet_webp" />
-                <source media="(max-width: 1169px)" srcset="assets/images/blog/vr.jpg_tablet" />
-                <source type="image/webp" srcset="assets/images/blog/vr.jpg_webp" />
+                <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/blog/vr_tablet.webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/vr_tablet.jpg" />
+                <source type="image/webp" srcset="assets/images/blog/vr.webp" />
                 <img src="assets/images/blog/vr.jpg" alt="@alt" class="article-card__img" />
               </picture>
             </a>
@@ -141,11 +244,11 @@
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/blog/radio.jpg_webp" />
+                <source type="image/webp" media="(max-width: 450px)" srcset="assets/images/blog/radio.webp" />
                 <source media="(max-width: 450px)" srcset="assets/images/blog/radio.jpg" />
-                <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/blog/radio.jpg_tablet_webp" />
-                <source media="(max-width: 1169px)" srcset="assets/images/blog/radio.jpg_tablet" />
-                <source type="image/webp" srcset="assets/images/blog/radio.jpg_webp" />
+                <source type="image/webp" media="(max-width: 1169px)" srcset="assets/images/blog/radio_tablet.webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/radio_tablet.jpg" />
+                <source type="image/webp" srcset="assets/images/blog/radio.webp" />
                 <img src="assets/images/blog/radio.jpg" alt="@alt" class="article-card__img" />
               </picture>
             </a>
@@ -170,16 +273,20 @@
           </article>
 
         </div>
-
         <a href="#" class="listing__link link">Смотреть все</a>
       </section>
 
+
+      <!-- prettier ignore -->
       <section class="contacts home__contacts">
         <h2 class="contacts__section-title section-title">КОНТАКТЫ</h2>
         <div class="contacts__container"></div>
       </section>
 
+
+      <!-- prettier ignore -->
       <div class="doit"></div>
+
 
       <!-- prettier ignore -->
       <section class="listing home__listing">
@@ -285,10 +392,10 @@
   </main>
 
   <footer class="page-footer">footer</footer>
-  <div class="pp" id="eventPP">
+  <div class="pp" id="js-eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
-        <button type="button" class="pp__x-btn x-btn">
+        <button type="button" title="Закрыть" class="pp__x-btn x-btn js-ppCloseBtn">
           <svg class="x-btn__icon" width="12" height="12">
             <use xlink:href="assets/icons/symbols.svg#x"></use>
           </svg>
@@ -397,10 +504,10 @@
           </label>
 
           <div class="form_btns">
-            <button type="submit" class="btn form__submit">
+            <button type="submit" class="btn form__submit form__submit--w50">
               Отправить
             </button>
-            <button type="button" class="form__close-btn">
+            <button type="button" class="form__close-btn js-ppCloseBtn">
               Закрыть
             </button>
           </div>
@@ -409,6 +516,9 @@
       </div>
     </div>
   </div>
+
+
+  <script src="scripts/swiper.min.js"></script>
 
   <script src="scripts/main.min.js"></script>
 </body>
