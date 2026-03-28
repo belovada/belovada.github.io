@@ -1,40 +1,73 @@
-<section class="contacts @@class">
-          <h2 class="contacts__section-title section-title">Контакты</h2>
-
-          <div class="contacts__wrapper">
-            <ul class="contacts__list">
-                <li class="contacts__item">
-                    <div class="contacts__item-mark">
-                        <svg class="contacts__item-icon" width="18" height="18">
-                            <use
-                                xlink:href="assets/icons/symbols.svg#dot"
-                            ></use>
-                        </svg>
+<div class="contacts">
+    <h2 class="listing__title section-title">Контакты</h2>
+    <div class="contacts__container">
+        <div class="contacts__map" id="js-contactsMap"></div>
+        <div class="contacts__info">
+            <div class="contacts__adress">
+                <div class="contacts__location">
+                    <picture class="contacts__location-pic">
+                        <source
+                            media="(max-width: 370px)"
+                            srcset="assets/images/contacts/location_tablet.jpg"
+                        />
+                        <img
+                            src="assets/images/contacts/location.jpg"
+                            class="contacts__location-img"
+                            alt="location"
+                        />
+                    </picture>
+                </div>
+                <div class="contacts__text">
+                    <div class="contacts__title contacts__title-adress">
+                        Томск, Красноармейская 146
                     </div>
-                    <div class="contacts__item-content">
-                        <h4 class="contacts__item-content">
-                            Томск, Белая 8
-                        </h4>
-
-                        <div class="contacts__item-info">
-                            2 этаж
-                        </div>
-                        <div class="contacts__item-info">
-                            оф. 207-208
-                        </div>
-                    </div>
-                </li>
-
-                <li class="contacts__item">
-                    <div class="contacts__item-mark">
-
-                    </div>
-                    <div class="contacts__item-content">
-
-                    </div>
-                </li>
-            </ul>
-
-            <div class="contacts__map" id="js-contactsMap"></div>
-          </div>
-</section>
+                    <div class="contacts__details">2 этаж</div>
+                    <div class="contacts__details">оф. 206</div>
+                </div>
+            </div>
+            <div class="contacts__rent">
+                <div class="contacts__home">
+                    <picture class="contacts__home-pic">
+                        <source
+                            media="(max-width: 370px)"
+                            srcset="assets/images/contacts/home_tablet.jpg"
+                        />
+                        <img
+                            src="assets/images/contacts/home.jpg"
+                            class="contacts__home-img"
+                            alt="home"
+                        />
+                    </picture>
+                </div>
+                <div class="contacts__text">
+                    <div class="contacts__title">Отдел аренды</div>
+                    <a href="tel:+73822907256" class="contacts__details">8 (3822) 90-72-56</a>
+                    <a href="idat@tusur.ru" class="contacts__details">idat@tusur.ru</a>
+                </div>
+            </div>
+            <div class="contacts__events">
+                <div class="contacts__star">
+                    <picture class="contacts__star-pic">
+                        <source
+                            media="(max-width: 370px)"
+                            srcset="assets/images/contacts/star_tablet.jpg"
+                        />
+                        <img
+                            src="assets/images/contacts/star.jpg"
+                            class="contacts__star-img"
+                            alt="star"
+                        />
+                    </picture>
+                </div>
+                <div class="contacts__text">
+                    <div class="contacts__title">Отдел мероприятий </div>
+                    <a href="tel:+73822907256" class="contacts__details">8 (3822) 90-72-56</a>
+                    <a href="idat@tusur.ru" class="contacts__details">idat@tusur.ru</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <span class="contacts__decor-text">
+        Просто делайте, что нравится,<br />а мы вам поможем
+    </span>
+</div>

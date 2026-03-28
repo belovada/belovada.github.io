@@ -1,0 +1,101 @@
+.main-header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__title,
+  &__description {
+    text-align: center;
+    text-wrap: nowrap;
+    font-family: @font2;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 1.29;
+    text-transform: uppercase;
+    @media @bw1660 {
+      font-size: 35px;
+    }
+    @media @bw960 {
+      font-size: 30px;
+    }
+    @media @bw700 {
+      font-size: 25px;
+    }
+    @media @bw600 {
+      font-size: 13px;
+    }
+  }
+
+  &__logo {
+    overflow: hidden;
+  }
+
+  &__logo-icon {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto 25px;
+    font-size: 0;
+    text-decoration: none;
+    @media @bw1660 {
+      width: 120%;
+      margin-left: -11%;
+    }
+    @media @bw960 {
+      width: 150%;
+      margin-left: -26%;
+    }
+    @media @bw700 {
+      width: 160%;
+      margin-left: -31%;
+    }
+    @media @bw600 {
+      width: 170%;
+      margin-left: -36%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 70px;
+    @media @bw1660 {
+      margin-bottom: 0px;
+    }
+    @media @bw960 {
+      margin-bottom: -30px;
+    }
+    @media @bw700 {
+      margin-bottom: -60px;
+    }
+    @media @bw600 {
+      margin-bottom: -80px;
+    }
+    @media @bw400 {
+      margin-bottom: -100px;
+    }
+  }
+
+  &__description {
+    margin-top: 70px;
+    margin-bottom: 100px;
+    @media @bw1660 {
+      margin-top: 0px;
+    }
+    @media @bw960 {
+      margin-top: -30px;
+      margin-bottom: 70px;
+    }
+    @media @bw700 {
+      margin-top: -60px;
+      margin-bottom: 50px;
+    }
+    @media @bw600 {
+      margin-top: -90px;
+    }
+    @media @bw400 {
+      margin-top: -110px;
+      margin-bottom: 40px;
+    }
+  }
+
+}

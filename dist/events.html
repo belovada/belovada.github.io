@@ -303,37 +303,65 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <nav class="page-footer__nav">
-        <a href="#" class="page-footer__nav-link">Календарь мероприятий</a>
-        <a href="#" class="page-footer__nav-link">Провести мероприятие</a>
-        <a href="#" class="page-footer__nav-link">Стать арендатором</a>
-        <a href="#" class="page-footer__nav-link">Наши проекты</a>
-        <a href="#" class="page-footer__nav-link">Контакты</a>
-      </nav>
-
-      <form action="https://jsonplaceholder.typicode.com/posts" class="page-footer__subscribe-form subscribe-form" id="js-subscribeForm">
-        <h4 class="subscribe-form__title">Подпишись и будь в курсе происходящего</h4>
-
-        <div class="subscribe-form__wrapper">
-          <div class="subscribe-form__field-wrapper">
-            <input type="email" name="email" placeholder="Email" class="subscribe-form__input" required id="js-subscribeEmail" />
-          </div>
-
-          <button type="submit" class="subscribe-form__submit">
-            Подписаться
-          </button>
+    <div class="page-footer__contents">
+      <div class="page-footer__container">
+        <div class="page-footer__content content">
+          <blockquote class="page-footer__links">
+            <a href="#" class="page-footer__link">Календарь мероприятий</a>
+            <a href="#" class="page-footer__link">Провести мероприятие</a>
+            <a href="#" class="page-footer__link">Стать арендатором</a>
+            <a href="#" class="page-footer__link">Наши проекты</a>
+            <a href="#" class="page-footer__link">Контакты</a>
+          </blockquote>
         </div>
-
-        <label class="subscribe-form__check check">
-          <input type="checkbox" name="agree" class="check__input" required checked />
-          <span class="check__mark"></span>
-          <span class="check__label check__label--s">
-            Согласен на обработку персональных данных
-          </span>
-        </label>
-
-      </form>
+        <div class="page-footer__form" id="js-subscribevalid">
+          <form action="https://jsonplaceholder.typicode.com/posts" class="page-footer__form-container subscribe-form" id="js-subscribeForm">
+            <span class="page-footer__form-title">Подпишись и будь в курсе происходящего</span>
+            <div class="page-footer__form-email">
+              <label class="field page-footer__form-field">
+                <input class="field__input page-footer__form-input" type="email" placeholder="Email" name="mailing_list_email" required />
+              </label>
+              <button type="submit" class="btn page-footer__form-btn">Подписаться</button>
+            </div>
+            <div class="page-footer__form-bottom">
+              <label class="check page-footer__form-check">
+                <span class="page-footer__form-checklabel">
+                  Согласен на обработку персональных данных
+                </span>
+                <input type="checkbox" name="agree" class="check__input" required checked />
+                <span class="check__mark"></span>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="page-footer__copyright">
+          <a href="#" class="page-footer__copyright-link">© Millennials 2025</a>
+        </div>
+        <div class="page-footer__utility">
+          <a href="#" class="page-footer__utility-link">Политика конфиденциальности</a>
+          <a href="#" class="page-footer__utility-link">Cookies</a>
+        </div>
+        <div class="page-footer__socials">
+          <a href="#" class="page-footer__socials-link">
+            <svg class="page-footer__socials-icon" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#socials_vk"></use>
+            </svg>
+          </a>
+          <a href="#" class="page-footer__socials-link">
+            <svg class="page-footer__socials-icon" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#socials_vk"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="page-footer__dignity">
+          <span class="page-footer__dignity-text">Создание и продвижение</span>
+          <a href="#" class="page-footer__dignity-link">
+            <svg class="page-footer__dignity-logo" width="80" height="36">
+              <use xlink:href="assets/icons/symbols.svg#dignity"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
   </footer>
 
@@ -464,14 +492,14 @@
   </div>
 
 
-  <script src="scripts/jquery-4.0.0.min.js"></script>
-  <script src="scripts/jquery.selectric.min.js"></script>
+  <script src="scripts/jquery-3.7.1.min.js"></script>
+  <script src="scripts/jquery.selectric.js"></script>
   <script src="scripts/jquery.mask.js"></script>
   <script src="scripts/air-datepicker.js"></script>
   <script src="scripts/jquery.validate.js"></script>
   <script src="scripts/jquery.validate-init.js"></script>
-
   <script src="scripts/main.min.js"></script>
+
 </body>
 
 </html>
