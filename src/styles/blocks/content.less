@@ -1,113 +1,151 @@
 .content{
+    color: @black;
     font-family: @font1;
     font-size: 16px;
-    line-height: 1.375;
+    font-weight: 400;
     font-style: normal;
-    color: @black;
+    line-height: 1.375;
     word-wrap: break-word;
+    @media @bw600 {
+        font-size: 14px;
+    }
 
     h1,
     h2,
-    h3,
+    h4,
     h4,
     h5,
-    h6{
-        margin: 1.5em 0 1em;
+    h6 {
+        margin: 1.3em 0 0.8em;
         font-family: @font1;
+        color: @black;
         font-weight: 600;
-        &:first-child{
+        &:first-child {
             margin-top: 0;
         }
-        &:last-child{
+        &:last-child {
             margin-bottom: 0;
         }
     }
 
-    h1{
+    h1 {
         font-size: 32px;
     }
-    h2{
+
+    h2 {
         font-size: 28px;
     }
-    h3{
+
+    h4 {
         font-size: 24px;
     }
-    h4{
+
+    h4 {
         font-size: 20px;
     }
-    h5{
+
+    h5 {
         font-size: 18px;
+        @media @bw600 {
+        font-size: 16px;
+        }
     }
-    h6{
+
+    h6 {
         font-size: 16px;
     }
 
     ol,
     ul,
-    p{
+    p {
         margin: 20px 0;
-        &:first-child{
+        font-family: @font1;
+        &:first-child {
             margin-top: 0;
         }
-        &:last-child{
+        &:last-child {
             margin-bottom: 0;
         }
     }
 
     ul,
-    ol{
-        list-style: none;
+    ol {
         position: relative;
         padding: 0;
-    }
-    ul > li,
-    ol > li{
-        margin: 0 0 10px;
-
-        &:last-child{
-            margin-bottom: 0;
+        list-style: none;
+        font-family: @font1;
+        font-size: 16px;
+        @media @bw600 {
+            font-size: 14px;
         }
     }
-    ul > li{
+
+    ul > li {
         box-sizing: border-box;
         position: relative;
-        padding-left: 15px;
-        &::before{
+        padding-left: 20px;
+        &::before {
             content: "";
+            display: block;
             position: absolute;
-            left: 0;
             top: 8px;
-            width: 4px;
-            height: 4px;
+            left: 0;
+            width: 6px;
+            height: 6px;
             border-radius: 50%;
             background-color: @red;
             pointer-events: none;
         }
     }
-    ol{
+
+    ol {
         counter-reset: li;
+        padding: 0;
     }
 
-    ol > li{
+    ol > li {
         counter-increment: li;
-        &::before{
+        &::before {
             content: counter(li) + ". ";
             box-sizing: border-box;
             display: inline-block;
             min-width: 20px;
+            color: @black;
             white-space: pre;
         }
     }
-    img,
-    figure,
-    iframe,
-    .adaptive-frame{
-        &:first-child{
-            margin-top: 0;
-        }
-        &:last-child{
+
+    ul > li,
+    ol > li {
+        margin: 0 0 8px;
+        cursor: default;
+        &:last-child {
             margin-bottom: 0;
         }
+    }
+
+    img,
+    iframe,
+    figure {
+        display: block;
+        max-width: 700px;
+    }
+
+    & > img,
+    & > figure,
+    & > iframe{
+        margin: 30px 0;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    iframe {
+        border: none;
+        outline: none;
     }
 
     figure{
@@ -123,12 +161,22 @@
         color: @black;
         font-weight: 400;
         font-size: 13px;
+        text-align: left;
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 
     img{
         &[align],
         &.alignright{
             margin: 5px 0;
+            & + figcaption {
+                display: none;
+            }
         }
         &[align="right"],
         &.alignright{
@@ -149,7 +197,7 @@
     a{
         font-weight: 600;
         color: @black;
-        text-decoration: none;
+        text-decoration: underline;
         transition: color 0.2s;
         cursor: pointer;
         &:hover,
@@ -164,9 +212,11 @@
 
     blockquote{
         margin: 30px 0;
-        padding: 8px 0 8px 24px;
+        padding: 0 0 0 20px;
         font-weight: 600;
         position: relative;
+        color: fade(@black, 90%);
+        font-style: normal;
         &:first-child{
             margin-top: 0;
         }
@@ -183,5 +233,8 @@
             width: 4px;
             background-color: @red;
         }
+    }
+    b {
+        font-weight: 700;
     }
 }

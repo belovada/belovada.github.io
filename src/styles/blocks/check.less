@@ -7,6 +7,8 @@
     min-height: 24px;
     padding-left: 24px;
     padding-top: 2px;
+    margin-top: 15px;
+    margin-bottom: 35px;
     color: @black;
     cursor: pointer;
     &__input{
@@ -40,11 +42,13 @@
         border: 1px solid @black;
     }
     &__label{
+        margin-left: 15px;
         font-weight: 400;
         font-size: 16px;
         line-height: 1.375;
         &--fz14{
             font-size: 14px;
+            line-height: 19px;
         }
     }
      &--red {
@@ -65,5 +69,13 @@
     &--disabled {
         pointer-events: none;
         opacity: 0.5;
+    }
+
+    label.error,
+    span.error {
+        display: block;
+        margin: 5px 0 0 15px;
+        font-size: 14px;
+        color: @red;
     }
 }

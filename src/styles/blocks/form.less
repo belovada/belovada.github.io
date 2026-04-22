@@ -1,41 +1,67 @@
 .form{
+    @media @bw400 {
+        margin-left: -20px;
+    }
     &__list{
         display: flex;
         flex-wrap: wrap;
         gap: 0px 60px;
+        @media @bw1170 {
+            gap: 0 40px;
+        }
+        @media @bw960 {
+            gap: 0 30px;
+        }
     }
     &__field,
     &__group {
         width:100%;
-        margin: 0 0 30px;
+        margin: 0 0 36px;
         &--w50{
             width: calc(50%-30px);
         }
         &--m0{
             margin: 0;
         }
+        @media @bw1170 {
+            width: 45%;
+        }
+        @media @bw768 {
+            width: 100%;
+        }
     }
-    &__check{
-        margin: 0 0 30px;
-    }
+    // &__check{
+    //     margin: 0 0 30px;
+    // }
     &__title{
         display: block;
         margin: 0 0 10px;
+        color: @black;
         font-weight: 700;
         font-size: 18px;
+        line-height: 1.39;
     }
     &__btns{
         margin-top: 10px;
         display: flex;
         align-items: center;
-        gap: 60px;
+        @media @bw500 {
+            flex-direction: column;
+            gap: 30px 0;
+        }
     }
     &__submit{
-        width: calc(50%-30px);
+        width: 100%;
+        max-width: 401px;
+        min-width: 240px;
+        @media @bw960 {
+            max-width: 290px;
+        }
     }
     &__close-btn{
         margin: 0 auto;
-        padding: 5px;
+        min-width: 150px;
+        padding: 4px 0;
         border: none;
         background-color: transparent;
         text-decoration: underline;
@@ -44,6 +70,7 @@
         font-size: 16px;
         line-height: 1.375;
         transition: color 0.2s;
+        cursor: pointer;
         &:hover,
         &:active{
             color: @red;
